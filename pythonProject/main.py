@@ -4,6 +4,8 @@ import time
 import pygame
 from pygame.locals import *
 
+import scripts.mechanics.shooting as shooting
+
 from scripts.entities.player import Player
 from scripts.entities.enemy import Enemy
 
@@ -43,6 +45,7 @@ while True:
 
     for s in all_sprites:
         s.update()
+    shooting.update()
 
     if entity_collide(player, enemies):
         displaySurface.fill((255, 0, 0))
@@ -55,5 +58,7 @@ while True:
     displaySurface.fill((255, 255, 255))
     for s in all_sprites:
         s.draw(displaySurface)
+    for b in shooting.bullet_pool:
+        b.draw(displaySurface)
     pygame.display.update()
     FPSClock.tick(FPS)

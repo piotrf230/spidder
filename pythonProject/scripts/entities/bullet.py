@@ -9,7 +9,8 @@ class Bullet(Entity):
         self.direction = Vector2()
         self.enabled = False
 
-    def shoot(self, speed, direction):
+    def shoot(self, speed, direction, origin):
+        self.set_position(origin.x, origin.y)
         self.speed = speed
         self.direction = direction
         self.enabled = True

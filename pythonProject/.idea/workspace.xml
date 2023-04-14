@@ -4,14 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="32019a4a-1b10-48c3-856f-686fba0478b2" name="Changes" comment="Init">
-      <change afterPath="$PROJECT_DIR$/scripts/entities/bullet.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scripts/mechanics/shooting.py" afterDir="false" />
+    <list default="true" id="32019a4a-1b10-48c3-856f-686fba0478b2" name="Changes" comment="shooting init">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scripts/Enemy.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/entities/enemy.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scripts/Entity.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/entities/entity.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scripts/Player.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/entities/player.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/entities/bullet.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/entities/bullet.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/entities/player.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/entities/player.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/mechanics/shooting.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/mechanics/shooting.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,7 +102,7 @@
       <workItem from="1681455867898" duration="786000" />
       <workItem from="1681467972087" duration="1295000" />
       <workItem from="1681469338683" duration="140000" />
-      <workItem from="1681469590930" duration="2147000" />
+      <workItem from="1681469590930" duration="3113000" />
     </task>
     <task id="LOCAL-00001" summary="Init">
       <created>1681469746422</created>
@@ -113,7 +111,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681469746422</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="shooting init">
+      <created>1681471805245</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1681471805245</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -132,9 +137,10 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Init" />
-    <option name="LAST_COMMIT_MESSAGE" value="Init" />
+    <MESSAGE value="shooting init" />
+    <option name="LAST_COMMIT_MESSAGE" value="shooting init" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/pythonProject$main.coverage" NAME="main Coverage Results" MODIFIED="1681468467057" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/pythonProject$main.coverage" NAME="main Coverage Results" MODIFIED="1681472584358" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
