@@ -4,8 +4,8 @@ import time
 import pygame
 from pygame.locals import *
 
-from Scripts.Player import Player
-from Scripts.Enemy import Enemy
+from scripts.entities.player import Player
+from scripts.entities.enemy import Enemy
 
 
 def entity_collide(entity, collide_group) -> bool:

@@ -1,6 +1,6 @@
 import pygame
 from pygame.math import Vector2
-from Scripts.Entity import Entity
+from scripts.entities.entity import Entity
 
 
 class Enemy(Entity):
