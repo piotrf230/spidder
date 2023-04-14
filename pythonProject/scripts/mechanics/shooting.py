@@ -8,7 +8,7 @@ bullet_pool = pygame.sprite.Group()
 def shoot(speed, direction, origin):
     for b in bullet_pool:
         if not b.enabled:
-            b.shoot(speed, direction)
+            b.shoot(speed, direction, origin)
             return
     bullet = Bullet()
     bullet.shoot(speed, direction, origin)
@@ -18,3 +18,9 @@ def shoot(speed, direction, origin):
 def update():
     for b in bullet_pool:
         b.update()
+
+
+def draw_bullets(surface):
+    for b in bullet_pool:
+        if b.enabled:
+            b.draw(surface)

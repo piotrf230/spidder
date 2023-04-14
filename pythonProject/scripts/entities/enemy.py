@@ -1,6 +1,7 @@
 import pygame
 from pygame.math import Vector2
 from scripts.entities.entity import Entity
+import scripts.mechanics.shooting as shooting
 
 
 class Enemy(Entity):
@@ -12,7 +13,12 @@ class Enemy(Entity):
         self.target = target_position
 
     def update(self):
-        if self.target == None:
+        collision = pygame.sprite.spritecollideany(self, shooting.bullet_pool)
+        if collision:
+            collision.disable()
+            self.kill()
+
+        if self.target is None:
             return
         t, c = self.target, self.rect.center
         mv = Vector2(t[0] - c[0], t[1] - c[1])

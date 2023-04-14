@@ -58,7 +58,6 @@ while True:
     displaySurface.fill((255, 255, 255))
     for s in all_sprites:
         s.draw(displaySurface)
-    for b in shooting.bullet_pool:
-        b.draw(displaySurface)
+    shooting.draw_bullets(displaySurface)
     pygame.display.update()
     FPSClock.tick(FPS)

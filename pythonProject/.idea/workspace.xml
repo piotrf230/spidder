@@ -4,11 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="32019a4a-1b10-48c3-856f-686fba0478b2" name="Changes" comment="shooting init">
+    <list default="true" id="32019a4a-1b10-48c3-856f-686fba0478b2" name="Changes" comment="shooting works (kinda)">
+      <change afterPath="$PROJECT_DIR$/scripts/mechanics/levels.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/entities/bullet.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/entities/bullet.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/entities/player.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/entities/player.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/entities/enemy.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/entities/enemy.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scripts/mechanics/shooting.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/mechanics/shooting.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -34,22 +34,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "D:/git/Studia/pythonproj/pythonProject",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "settings.editor.selected.configurable": "reference.settings.ide.settings.new.ui",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/git/Studia/pythonproj/pythonProject&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.ide.settings.new.ui&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\git\Studia\pythonproj\pythonProject\Scripts\Entities" />
@@ -102,7 +102,8 @@
       <workItem from="1681455867898" duration="786000" />
       <workItem from="1681467972087" duration="1295000" />
       <workItem from="1681469338683" duration="140000" />
-      <workItem from="1681469590930" duration="3113000" />
+      <workItem from="1681469590930" duration="4095000" />
+      <workItem from="1681477846027" duration="900000" />
     </task>
     <task id="LOCAL-00001" summary="Init">
       <created>1681469746422</created>
@@ -118,7 +119,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681471805245</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="shooting works (kinda)">
+      <created>1681473303961</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1681473303961</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -138,9 +146,10 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Init" />
     <MESSAGE value="shooting init" />
-    <option name="LAST_COMMIT_MESSAGE" value="shooting init" />
+    <MESSAGE value="shooting works (kinda)" />
+    <option name="LAST_COMMIT_MESSAGE" value="shooting works (kinda)" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/pythonProject$main.coverage" NAME="main Coverage Results" MODIFIED="1681472584358" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/pythonProject$main.coverage" NAME="main Coverage Results" MODIFIED="1681478687582" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
