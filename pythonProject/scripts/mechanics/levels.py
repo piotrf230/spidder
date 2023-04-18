@@ -1,3 +1,5 @@
+import pygame
+
 from scripts.entities.enemy import Enemy
 
 grid = []
@@ -19,7 +21,17 @@ def __GenerateGrid(width, height):
 
 class Level:
     def __init__(self, enemies=[]):
-        self.enemies = enemies
+        self.enemies = pygame.sprite.Group()
+        for e in enemies:
+            self.enemies.add(e)
 
     def add_enemy(self, x, y):
         self.enemies.add(Enemy(x, y))
+
+    def update(self):
+        for e in self.enemies:
+            e.update()
+
+    def draw(self, surface):
+        for e in self.enemies:
+            e.draw(surface)

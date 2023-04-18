@@ -27,15 +27,6 @@ displaySurface = pygame.display.set_mode(windowSize)
 player = Player()
 player.set_position(150, 150)
 
-enemies = pygame.sprite.Group()
-enemies.add(Enemy((500, 500)))
-enemies.add(Enemy((400, 500)))
-enemies.add(Enemy((500, 400)))
-all_sprites = pygame.sprite.Group()
-all_sprites.add(player)
-for e in enemies:
-    all_sprites.add(e)
-
 levels.Generate(3, 3)
 move = None
 
@@ -46,19 +37,15 @@ while True:
             sys.exit()
 
     # logic
-    for e in enemies:
-        e.set_target(player.get_position())
-
-    for s in all_sprites:
-        s.update()
+    player.update()
     shooting.update()
 
-    if entity_collide(player, enemies):
-        displaySurface.fill((255, 0, 0))
-        pygame.display.update()
-        time.sleep(2)
-        pygame.quit()
-        sys.exit()
+    # if entity_collide(player, enemies):
+    #     displaySurface.fill((255, 0, 0))
+    #     pygame.display.update()
+    #     time.sleep(2)
+    #     pygame.quit()
+    #     sys.exit()
 
     p = player.get_position()
     d = pygame.display.get_window_size()
@@ -73,9 +60,9 @@ while True:
         player.set_position(p[0], p[1] - d[1])
 
     # draw
-    displaySurface.fill((255, 255, 255))
-    for s in all_sprites:
-        s.draw(displaySurface)
+    displaySurface.fill((56, 156, 56))
     shooting.draw_bullets(displaySurface)
+    player.draw(displaySurface)
+
     pygame.display.update()
     FPSClock.tick(FPS)
