@@ -22,3 +22,4 @@ class Bullet(Entity):
         self.enabled = False
         self.speed = 0
         self.direction = Vector2()
+        self.set_position(-30,-30)

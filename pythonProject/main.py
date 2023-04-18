@@ -5,6 +5,7 @@ import pygame
 from pygame.locals import *
 
 import scripts.mechanics.shooting as shooting
+import scripts.mechanics.levels as levels
 
 from scripts.entities.player import Player
 from scripts.entities.enemy import Enemy
@@ -35,6 +36,9 @@ all_sprites.add(player)
 for e in enemies:
     all_sprites.add(e)
 
+levels.GenerateGrid(3, 3)
+move = None
+
 while True:
     for event in pygame.event.get():
         if event.type == QUIT:
@@ -42,6 +46,8 @@ while True:
             sys.exit()
 
     # logic
+    for e in enemies:
+        e.set_target(player.get_position())
 
     for s in all_sprites:
         s.update()

@@ -1,5 +1,4 @@
 import pygame
-from pygame.math import Vector2
 from scripts.entities.bullet import Bullet
 
 bullet_pool = pygame.sprite.Group()

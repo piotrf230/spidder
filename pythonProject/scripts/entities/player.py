@@ -9,6 +9,7 @@ class Player(Entity):
     def __init__(self):
         super().__init__(pygame.image.load("Sprites/player.png"), (150, 150))
         self.shoot_direction = Vector2(1, 0)
+        self.space = False
 
     def update(self):
         pressed = pygame.key.get_pressed()
@@ -26,8 +27,10 @@ class Player(Entity):
         if mv.length() > 0.001:
             self.shoot_direction = mv
 
-        if pressed[pygame.K_SPACE]:
+        presSpace = pressed[pygame.K_SPACE]
+        if presSpace and presSpace != self.space:
             center = self.rect.center
             shooting.shoot(8, self.shoot_direction, Vector2(center[0], center[1]))
+        self.space = presSpace
 
         self.move(mv)
