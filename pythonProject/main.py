@@ -36,7 +36,7 @@ all_sprites.add(player)
 for e in enemies:
     all_sprites.add(e)
 
-levels.GenerateGrid(3, 3)
+levels.Generate(3, 3)
 move = None
 
 while True:
@@ -59,6 +59,18 @@ while True:
         time.sleep(2)
         pygame.quit()
         sys.exit()
+
+    p = player.get_position()
+    d = pygame.display.get_window_size()
+
+    if p[0] < 0:
+        player.set_position(p[0] + d[0], p[1])
+    elif p[0] > d[0]:
+        player.set_position(p[0] - d[0], p[1])
+    elif p[1] < 0:
+        player.set_position(p[0], p[1] + d[1])
+    elif p[1] > d[1]:
+        player.set_position(p[0], p[1] - d[1])
 
     # draw
     displaySurface.fill((255, 255, 255))
