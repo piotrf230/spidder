@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="32019a4a-1b10-48c3-856f-686fba0478b2" name="Changes" comment="sth">
+    <list default="true" id="32019a4a-1b10-48c3-856f-686fba0478b2" name="Changes" comment="levels working, mao init">
+      <change afterPath="$PROJECT_DIR$/scripts/mechanics/map.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Levels/Levels.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Levels/Levels.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/mechanics/levels.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/mechanics/levels.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/map.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,6 +51,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\git\Studia\pythonproj\pythonProject\scripts\mechanics" />
       <recent name="D:\git\Studia\pythonproj\pythonProject\Scripts\Entities" />
       <recent name="D:\git\Studia\pythonproj\pythonProject\Scripts\Machanics" />
       <recent name="C:\Users\piotr\PycharmProjects\pythonProject\Sprites" />
@@ -108,7 +110,7 @@
       <workItem from="1681808467577" duration="1542000" />
       <workItem from="1681843332692" duration="1088000" />
       <workItem from="1681980059447" duration="3425000" />
-      <workItem from="1681989186899" duration="6334000" />
+      <workItem from="1681989186899" duration="9327000" />
     </task>
     <task id="LOCAL-00001" summary="Init">
       <created>1681469746422</created>
@@ -173,7 +175,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681995330563</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="levels working, mao init">
+      <created>1681996857565</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1681996857565</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -196,9 +205,10 @@
     <MESSAGE value="shooting works (kinda)" />
     <MESSAGE value="kill works" />
     <MESSAGE value="sth" />
-    <option name="LAST_COMMIT_MESSAGE" value="sth" />
+    <MESSAGE value="levels working, mao init" />
+    <option name="LAST_COMMIT_MESSAGE" value="levels working, mao init" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/pythonProject$main.coverage" NAME="main Coverage Results" MODIFIED="1681996164769" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/pythonProject$main.coverage" NAME="main Coverage Results" MODIFIED="1682000072875" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

@@ -6,9 +6,9 @@ from pygame.locals import *
 
 import scripts.mechanics.shooting as shooting
 import scripts.mechanics.levels as levels
+from scripts.mechanics.map import MiniMap
 
 from scripts.entities.player import Player
-from scripts.entities.enemy import Enemy
 
 
 def entity_collide(entity, collide_group) -> bool:
@@ -27,6 +27,8 @@ player = Player()
 player.set_position(300, 550)
 
 levels.Load("Levels/Levels.xml")
+mm = MiniMap()
+
 move = None
 
 while True:
@@ -66,12 +68,14 @@ while True:
         levels.change_level((0, 1))
 
     levels.update()
+    mm.update()
 
     # draw
     displaySurface.fill((56, 156, 56))
     shooting.draw_bullets(displaySurface)
     player.draw(displaySurface)
     levels.draw(displaySurface)
+    mm.draw(displaySurface)
 
     pygame.display.update()
     FPSClock.tick(FPS)
