@@ -18,6 +18,9 @@ def update():
     for b in bullet_pool:
         b.update()
 
+def clear_screen():
+    for b in bullet_pool:
+        b.disable()
 
 def draw_bullets(surface):
     for b in bullet_pool:
