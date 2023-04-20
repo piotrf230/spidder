@@ -7,7 +7,7 @@ import scripts.mechanics.shooting as shooting
 class Player(Entity):
 
     def __init__(self):
-        super().__init__(pygame.image.load("Sprites/player.png"), (150, 150))
+        super().__init__(pygame.image.load("Sprites/player.png"), (300, 550))
         self.shoot_direction = Vector2(1, 0)
         self.space = False
 

@@ -52,17 +52,22 @@ while True:
 
     if p[0] < 0:
         player.set_position(p[0] + d[0], p[1])
+        levels.change_level((-1, 0))
     elif p[0] > d[0]:
         player.set_position(p[0] - d[0], p[1])
+        levels.change_level((1, 0))
     elif p[1] < 0:
         player.set_position(p[0], p[1] + d[1])
+        levels.change_level((0, -1))
     elif p[1] > d[1]:
         player.set_position(p[0], p[1] - d[1])
+        levels.change_level((0, 1))
 
     # draw
     displaySurface.fill((56, 156, 56))
     shooting.draw_bullets(displaySurface)
     player.draw(displaySurface)
+    levels.update()
 
     pygame.display.update()
     FPSClock.tick(FPS)
