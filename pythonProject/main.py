@@ -14,7 +14,6 @@ from scripts.entities.enemy import Enemy
 def entity_collide(entity, collide_group) -> bool:
     return pygame.sprite.spritecollideany(entity, collide_group)
 
-
 windowSize = (600, 600)
 
 pygame.init()
@@ -25,9 +24,9 @@ FPSClock = pygame.time.Clock()
 displaySurface = pygame.display.set_mode(windowSize)
 
 player = Player()
-player.set_position(150, 150)
+player.set_position(300, 550)
 
-levels.Generate(3, 3)
+levels.Load("Levels/Levels.xml")
 move = None
 
 while True:
@@ -40,12 +39,15 @@ while True:
     player.update()
     shooting.update()
 
-    # if entity_collide(player, enemies):
-    #     displaySurface.fill((255, 0, 0))
-    #     pygame.display.update()
-    #     time.sleep(2)
-    #     pygame.quit()
-    #     sys.exit()
+    for e in levels.current_level().enemies:
+        e.set_target(player.get_position())
+
+    if entity_collide(player, levels.current_level().enemies):
+        displaySurface.fill((255, 0, 0))
+        pygame.display.update()
+        time.sleep(2)
+        pygame.quit()
+        sys.exit()
 
     p = player.get_position()
     d = pygame.display.get_window_size()
@@ -63,11 +65,13 @@ while True:
         player.set_position(p[0], p[1] - d[1])
         levels.change_level((0, 1))
 
+    levels.update()
+
     # draw
     displaySurface.fill((56, 156, 56))
     shooting.draw_bullets(displaySurface)
     player.draw(displaySurface)
-    levels.update()
+    levels.draw(displaySurface)
 
     pygame.display.update()
     FPSClock.tick(FPS)

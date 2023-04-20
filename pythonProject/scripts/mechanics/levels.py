@@ -1,20 +1,43 @@
 import pygame
 
 from scripts.entities.enemy import Enemy
+import xml.etree.ElementTree as xml
 
 grid = []
 grid_size = (0, 0)
 current_position = (0, 0)
 
 
-def Generate(width, height):
+def Load(filename):
+    root = xml.parse(filename).getroot()
+
     global grid_size
-    grid_size = (width, height)
-    for j in range(height):
-        grid.append([])
-        for i in range(width):
-            grid[j].append(Level([(200, 300), (400, 300)]))
-            grid[j][i].disable()
+    global current_position
+
+    w, h = int(root.attrib["width"]), int(root.attrib["height"])
+    grid_size = (w, h)
+    current_position = (int(root.attrib["startX"]), int(root.attrib["startY"]))
+
+    grid.append([])
+    i, j = 0, 0
+    for level in root:
+        enemies = []
+        for enemy in level:
+            enemies.append((int(enemy.attrib["x"]), int(enemy.attrib["y"])))
+            print("adding enemy ")
+
+        lvl = Level(enemies)
+        grid[j].append(lvl)
+
+        i += 1
+        if i >= w:
+            i = 0
+            j += 1
+            grid.append([])
+
+        lvl.disable()
+
+    current_level().enable()
 
 
 def update():
@@ -40,6 +63,10 @@ def change_level(dir):
 
 def current_level():
     return grid[current_position[0]][current_position[1]]
+
+
+def draw(surface):
+    current_level().draw(surface)
 
 
 class Level:
