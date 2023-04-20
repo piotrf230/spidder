@@ -23,8 +23,8 @@ def Load(filename):
     for level in root:
         enemies = []
         for enemy in level:
-            enemies.append((int(enemy.attrib["x"]), int(enemy.attrib["y"])))
-            print("adding enemy ")
+            x, y = int(enemy.attrib["x"]), int(enemy.attrib["y"])
+            enemies.append((x, y))
 
         lvl = Level(enemies)
         grid[j].append(lvl)
