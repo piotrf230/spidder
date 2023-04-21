@@ -69,6 +69,14 @@ def draw(surface):
     current_level().draw(surface)
 
 
+def check_win() -> bool:
+    for row in grid:
+        for level in row:
+            if not level.is_cleared():
+                return False
+    return True
+
+
 class Level:
     def __init__(self, enemies=[]):
         self.enemies = pygame.sprite.Group()
