@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 
-<LevelGrid width="4" height="4" startX="1" startY="0">
+<LevelGrid width="3" height="3" startX="1" startY="0">
     <Level>
         <Enemy x="200" y="300"/>
         <Enemy x="300" y="300"/>
@@ -14,10 +14,7 @@
         <Enemy x="200" y="300"/>
         <Enemy x="400" y="300"/>
     </Level>
-    <Level>
-        <Enemy x="200" y="300"/>
-        <Enemy x="400" y="300"/>
-    </Level>
+
     <Level/>
     <Level>
         <Enemy x="200" y="300"/>
@@ -27,30 +24,7 @@
         <Enemy x="200" y="300"/>
         <Enemy x="400" y="300"/>
     </Level>
-    <Level>
-        <Enemy x="200" y="300"/>
-        <Enemy x="400" y="300"/>
-    </Level>
-    <Level>
-        <Enemy x="200" y="300"/>
-        <Enemy x="400" y="300"/>
-    </Level>
-    <Level>
-        <Enemy x="200" y="300"/>
-        <Enemy x="400" y="300"/>
-    </Level>
-    <Level>
-        <Enemy x="200" y="300"/>
-        <Enemy x="400" y="300"/>
-    </Level>
-    <Level>
-        <Enemy x="200" y="300"/>
-        <Enemy x="400" y="300"/>
-    </Level>
-    <Level>
-        <Enemy x="200" y="300"/>
-        <Enemy x="400" y="300"/>
-    </Level>
+
     <Level>
         <Enemy x="200" y="300"/>
         <Enemy x="400" y="300"/>

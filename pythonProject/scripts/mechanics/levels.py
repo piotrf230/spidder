@@ -94,3 +94,6 @@ class Level:
     def enable(self):
         for e in self.enemies:
             e.load()
+
+    def is_cleared(self):
+        return not (len(self.enemies) > 0)
