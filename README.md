@@ -1,0 +1,5 @@
+# Spidder
+The goal of the project is to practice python and get familiar with pygame library.
+## Gameplay
+The project is a game of top-down shooter genre, where a player, playing as a spider, has to hunt all the red ants on the map. The player starts with 3 hearts, and every direct contact with a chasing ants deducts one heart, losing all 3 hearts leads to defeat. Player can travel between 9 sectors of the map, enemies on the current sector are chasing the player, and while leaving the sector, enemy positions are saved, to be loaded once the player returns to a sector. To make navigation easier, there is a symbolic minimap in the top left corner of the screen, marking player position with a dot and coloring safe sectors green.  
+The map is a two dimensitonal array of levels, loaded from a xml file. The size, player level and enemy layout are defined by the file. The minimap in the corner of the screen is created based on the map layout and updated every time player goes to another level.
