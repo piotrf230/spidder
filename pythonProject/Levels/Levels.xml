@@ -7,34 +7,36 @@
         <Enemy x="400" y="300"/>
     </Level>
     <Level>
-        <Enemy x="200" y="300"/>
-        <Enemy x="400" y="300"/>
+        <Enemy x="300" y="200"/>
+        <Enemy x="300" y="400"/>
     </Level>
     <Level>
-        <Enemy x="200" y="300"/>
-        <Enemy x="400" y="300"/>
+        <Enemy x="200" y="200"/>
+        <Enemy x="400" y="400"/>
     </Level>
 
     <Level/>
     <Level>
-        <Enemy x="200" y="300"/>
-        <Enemy x="400" y="300"/>
+        <Enemy x="300" y="300"/>
     </Level>
     <Level>
-        <Enemy x="200" y="300"/>
-        <Enemy x="400" y="300"/>
+        <Enemy x="200" y="200"/>
+        <Enemy x="200" y="400"/>
+        <Enemy x="400" y="200"/>
+        <Enemy x="400" y="400"/>
     </Level>
 
     <Level>
-        <Enemy x="200" y="300"/>
-        <Enemy x="400" y="300"/>
+        <Enemy x="300" y="300"/>
+        <Enemy x="300" y="350"/>
     </Level>
     <Level>
-        <Enemy x="200" y="300"/>
-        <Enemy x="400" y="300"/>
+        <Enemy x="200" y="200"/>
+        <Enemy x="200" y="400"/>
+        <Enemy x="400" y="400"/>
     </Level>
     <Level>
-        <Enemy x="200" y="300"/>
-        <Enemy x="400" y="300"/>
+        <Enemy x="200" y="400"/>
+        <Enemy x="400" y="200"/>
     </Level>
 </LevelGrid>

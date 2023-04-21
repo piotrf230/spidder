@@ -31,6 +31,7 @@ windowSize = (600, 600)
 
 pygame.init()
 
+pygame.display.set_caption("Spidder")
 font = pygame.font.SysFont(None, 72, True)
 
 FPS = 60
@@ -39,7 +40,7 @@ FPSClock = pygame.time.Clock()
 displaySurface = pygame.display.set_mode(windowSize)
 
 player = Player()
-player.set_position(300, 550)
+player.set_position(300, 300)
 health.init_health(3)
 
 levels.Load("Levels/Levels.xml")
